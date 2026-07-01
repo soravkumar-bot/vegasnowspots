@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Places — VegasNow Spots</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Vegas<span>Now</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="places.html" class="active">Places</a>
+    <a href="guides.html">Guides</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </nav>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="places.html">Places</a>
+  <a href="guides.html">Guides</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=1400&q=80');"></div>
+  <div class="page-hero-content">
+    <div class="hero-badge">📍 200+ Verified Spots</div>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2.8rem,7vw,5.5rem);text-transform:uppercase;letter-spacing:2px;line-height:1;margin-bottom:1rem;">Discover <em style="color:var(--gold)">Vegas</em></h1>
+    <p style="color:rgba(240,240,245,0.7);font-size:1rem;max-width:440px;margin:0 auto;">From the Strip to secret corners — every spot worth visiting, all in one place.</p>
+  </div>
+</section>
+
+<!-- POPULAR SPOTS -->
+<section style="background:var(--black);">
+  <div class="section-head">
+    <div class="section-label">Top Rated</div>
+    <h2 class="section-title">Popular <span>Places</span></h2>
+    <p class="section-sub">The must-see destinations every visitor puts on their list.</p>
+  </div>
+  <div class="card-grid">
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=600&q=80" alt="The Strip" loading="lazy" />
+        <div class="card-tag">Iconic</div>
+      </div>
+      <div class="card-body">
+        <h3>The Las Vegas Strip</h3>
+        <p>4.2-mile stretch of world-class resorts, shows, and entertainment that defines Vegas.</p>
+        <div class="card-meta"><span>📍 Las Vegas Blvd S</span><span class="rating">★ 4.9</span></div>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=600&q=80" alt="Bellagio" loading="lazy" />
+        <div class="card-tag">Luxury</div>
+      </div>
+      <div class="card-body">
+        <h3>Bellagio Fountains</h3>
+        <p>Choreographed water shows over an 8-acre lake — free to watch, unforgettable to see.</p>
+        <div class="card-meta"><span>📍 3600 Las Vegas Blvd</span><span class="rating">★ 4.9</span></div>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?w=600&q=80" alt="Fremont" loading="lazy" />
+        <div class="card-tag">Classic</div>
+      </div>
+      <div class="card-body">
+        <h3>Fremont Street Experience</h3>
+        <p>The legendary LED canopy, retro casinos, and the original Vegas spirit.</p>
+        <div class="card-meta"><span>📍 Fremont St, Downtown</span><span class="rating">★ 4.7</span></div>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Red Rock" loading="lazy" />
+        <div class="card-tag">Nature</div>
+      </div>
+      <div class="card-body">
+        <h3>Red Rock Canyon</h3>
+        <p>Ancient sandstone cliffs just a short drive from the Strip — hike, climb, or drive through.</p>
+        <div class="card-meta"><span>📍 Charleston Blvd</span><span class="rating">★ 4.8</span></div>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80" alt="Valley of Fire" loading="lazy" />
+        <div class="card-tag">Scenic</div>
+      </div>
+      <div class="card-body">
+        <h3>Valley of Fire</h3>
+        <p>Fiery red rock formations 1 hour from Vegas — Nevada's oldest state park.</p>
+        <div class="card-meta"><span>📍 Moapa Valley, NV</span><span class="rating">★ 4.8</span></div>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80" alt="High Roller" loading="lazy" />
+        <div class="card-tag">Views</div>
+      </div>
+      <div class="card-body">
+        <h3>High Roller Observation Wheel</h3>
+        <p>At 550 feet, it's the world's tallest observation wheel with panoramic Strip views.</p>
+        <div class="card-meta"><span>📍 The LINQ Promenade</span><span class="rating">★ 4.6</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIDDEN GEMS -->
+<section style="background:var(--dark);">
+  <div class="section-head">
+    <div class="section-label">Off the Beaten Path</div>
+    <h2 class="section-title">Hidden <span>Gems</span></h2>
+    <p class="section-sub">Secret spots only locals know — now yours to discover.</p>
+  </div>
+  <div class="card-grid">
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Neon Museum" loading="lazy" />
+        <div class="card-tag">Hidden</div>
+      </div>
+      <div class="card-body">
+        <h3>The Neon Museum</h3>
+        <p>A graveyard of vintage Vegas signs — hauntingly beautiful, especially at night.</p>
+        <div class="card-meta"><span>📍 770 Las Vegas Blvd N</span><span class="rating">★ 4.7</span></div>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80" alt="Arts District" loading="lazy" />
+        <div class="card-tag">Local</div>
+      </div>
+      <div class="card-body">
+        <h3>18b Arts District</h3>
+        <p>Galleries, murals, indie coffee shops and the creative soul of Las Vegas.</p>
+        <div class="card-meta"><span>📍 Downtown Arts District</span><span class="rating">★ 4.5</span></div>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=600&q=80" alt="Springs Preserve" loading="lazy" />
+        <div class="card-tag">Nature</div>
+      </div>
+      <div class="card-body">
+        <h3>Springs Preserve</h3>
+        <p>Desert botanical gardens and nature trails — Vegas' green lung few tourists explore.</p>
+        <div class="card-meta"><span>📍 333 S Valley View Blvd</span><span class="rating">★ 4.6</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO SPOTS -->
+<section style="background:var(--black);">
+  <div class="section-head">
+    <div class="section-label">Camera Ready</div>
+    <h2 class="section-title">Best Photo <span>Locations</span></h2>
+  </div>
+  <div class="tips-grid">
+    <div class="tip-card"><div class="tip-num">📸</div><div><h4>Welcome to Las Vegas Sign</h4><p>The most photographed landmark in Nevada. Visit at dawn to avoid lines.</p></div></div>
+    <div class="tip-card"><div class="tip-num">🌆</div><div><h4>Stratosphere Tower</h4><p>Best wide-angle view of the Strip. Sunset shots here are unbeatable.</p></div></div>
+    <div class="tip-card"><div class="tip-num">🎨</div><div><h4>Seven Magic Mountains</h4><p>Neon-painted boulder towers rising from the Nevada desert — pure art.</p></div></div>
+    <div class="tip-card"><div class="tip-num">🌅</div><div><h4>Henderson Bird Preserve</h4><p>A surreal oasis contrast against the desert — great for editorial shots.</p></div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Plan Your <em style="color:var(--gold)">Perfect Trip</em></h2>
+  <p>Check our travel guides for insider tips, itineraries, and timing advice.</p>
+  <div class="btn-group">
+    <a href="guides.html" class="btn-primary">Read Guides</a>
+    <a href="contact.html" class="btn-outline">Ask a Local</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">Vegas<span>Now</span></div>
+      <p>Your guide to the best places, hidden gems, and photo spots in Las Vegas.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="places.html">All Places</a>
+      <a href="places.html">Hidden Gems</a>
+      <a href="places.html">Photo Spots</a>
+      <a href="places.html">Nature Spots</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="guides.html">Travel Guides</a>
+      <a href="blog.html">Blog</a>
+      <a href="guides.html">Best Time to Visit</a>
+      <a href="guides.html">Itineraries</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="#">About</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 VegasNow Spots. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="TikTok">🎵</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
