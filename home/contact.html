@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — VegasNow Spots</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Vegas<span>Now</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="guides.html">Guides</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="nav-cta active">Contact</a>
+  </nav>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="places.html">Places</a>
+  <a href="guides.html">Guides</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=1400&q=80');"></div>
+  <div class="page-hero-content">
+    <div class="hero-badge">📞 We're Here to Help</div>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2.8rem,7vw,5.5rem);text-transform:uppercase;letter-spacing:2px;line-height:1;margin-bottom:1rem;">Get in <em style="color:var(--gold)">Touch</em></h1>
+    <p style="color:rgba(240,240,245,0.7);font-size:1rem;max-width:440px;margin:0 auto;">Questions, recommendations, or partnership ideas — we'd love to hear from you.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section style="background:var(--black);">
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <h3>Let's Talk Vegas</h3>
+      <p>Whether you're planning a trip, know a hidden gem we've missed, or want to collaborate — drop us a message.</p>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <h4>Location</h4>
+          <p>Las Vegas, Nevada, USA</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <p>hello@vegasnowspots.com</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📸</div>
+        <div>
+          <h4>Instagram</h4>
+          <p>@vegasnowspots</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">⏰</div>
+        <div>
+          <h4>Response Time</h4>
+          <p>We reply within 24 hours</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div style="margin-bottom:1.8rem;">
+        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:0.3rem;">Send a Message</h3>
+        <p style="font-size:0.82rem;color:var(--muted);">All fields are required.</p>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" placeholder="Alex" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" placeholder="Rivera" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="alex@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <select id="topic">
+          <option value="" disabled selected>Select a topic</option>
+          <option>Trip Planning Help</option>
+          <option>Suggest a Spot</option>
+          <option>Photography Question</option>
+          <option>Partnership / Collaboration</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us what's on your mind..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;border:none;font-family:var(--font-body);" onclick="handleSubmit()">Send Message</button>
+      <div id="form-success" style="display:none;margin-top:1rem;padding:1rem;background:rgba(0,229,255,0.08);border:1px solid var(--cyan);border-radius:8px;font-size:0.85rem;color:var(--cyan);">
+        ✅ Message sent! We'll get back to you within 24 hours.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--dark);">
+  <div class="section-head">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Quick <span>Answers</span></h2>
+  </div>
+  <div class="tips-grid">
+    <div class="tip-card"><div class="tip-num">?</div><div><h4>Is VegasNow Spots free?</h4><p>Yes — all guides, place listings, and content are 100% free to access.</p></div></div>
+    <div class="tip-card"><div class="tip-num">?</div><div><h4>Can I submit a spot?</h4><p>Absolutely! Use the contact form above and we'll review it for our listings.</p></div></div>
+    <div class="tip-card"><div class="tip-num">?</div><div><h4>Do you offer custom guides?</h4><p>Yes, reach out with your dates and interests and we'll build a personalized itinerary.</p></div></div>
+    <div class="tip-card"><div class="tip-num">?</div><div><h4>Partner opportunities?</h4><p>We work with travel brands and local businesses. Send us a partnership inquiry.</p></div></div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section style="background:var(--black);padding-bottom:0;">
+  <div class="section-head">
+    <div class="section-label">We're Based in</div>
+    <h2 class="section-title">Las Vegas, <span>Nevada</span></h2>
+  </div>
+  <div style="height:280px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:var(--card);display:flex;align-items:center;justify-content:center;font-size:3rem;">
+    🗺️ <span style="font-family:var(--font-body);font-size:1rem;color:var(--muted);margin-left:1rem;">Las Vegas, NV 89109</span>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" style="margin-top:80px;">
+  <h2>Find Your Next <em style="color:var(--gold)">Spot</em></h2>
+  <p>Browse our full collection of Vegas locations while you wait for a reply.</p>
+  <div class="btn-group">
+    <a href="places.html" class="btn-primary">Explore Places</a>
+    <a href="guides.html" class="btn-outline">Read Guides</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">Vegas<span>Now</span></div>
+      <p>Your guide to the best places, hidden gems, and photo spots in Las Vegas.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="places.html">All Places</a>
+      <a href="places.html">Hidden Gems</a>
+      <a href="places.html">Photo Spots</a>
+      <a href="places.html">Nature Spots</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="guides.html">Travel Guides</a>
+      <a href="blog.html">Blog</a>
+      <a href="guides.html">Best Time to Visit</a>
+      <a href="guides.html">Itineraries</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="#">About</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 VegasNow Spots. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="TikTok">🎵</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function handleSubmit() {
+  const fields = ['fname','lname','email','topic','message'];
+  const allFilled = fields.every(id => document.getElementById(id)?.value?.trim());
+  if (allFilled) {
+    document.getElementById('form-success').style.display = 'block';
+  } else {
+    alert('Please fill in all fields before sending.');
+  }
+}
+</script>
+</body>
+</html>
